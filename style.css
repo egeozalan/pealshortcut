@@ -1,0 +1,407 @@
+:root {
+  --card-bg: #f5f5f5;
+  --text: #333;
+  --accent: #4e8cff;
+  --gray-light: #eee;
+  --gray-dark: #888;
+  --tag-bg: #e0e0e0;
+  --tag-active-bg: #ff0000;
+  --tag-active-text: #fff;
+}
+
+
+body {
+background-color: #121212;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  max-width: 1600px;
+  margin: auto;
+}
+h1, h3 {
+  text-align: center;
+}
+form, .filters {
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+input, textarea, select, button {
+  padding: 0.5rem;
+  background: #222;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+    transition: all 0.3s ease;
+  border-radius: 8px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #333;
+  cursor: pointer;
+    background-color: #ff0062;
+  color: white;
+}
+.shortcut {
+  border: 1px solid #333;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.shortcut img {
+  width: 60px;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+.tag {
+  background: #444;
+  padding: 2px 6px;
+  margin-right: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+.tag:hover {
+  background: #666;
+}
+
+.title {
+  color: rgb(255, 255, 255);
+  text-shadow:
+    0 0 5px #ff0062,
+    0 0 10px rgb(255, 0, 98),
+    0 0 20px rgb(255, 0, 98),
+    0 0 40px rgb(255, 0, 98),
+    0 0 80px rgb(255, 0, 98);
+      margin: 0;
+  font-size: 30pxpx;
+}
+
+:root {
+  --bg: #121212;
+  --text: #eee;
+  --card: #1e1e1e;
+}
+.light {
+  --bg: #ffffff;
+  --text: #111;
+  --card: #f2f2f2;
+}
+
+.shortcut {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.8rem;
+  border-radius: 10px;
+  background: var(--card);
+  margin-bottom: 0.6rem;
+}
+
+#shortcutList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.shortcut .thumb-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 10px;
+  flex-shrink: 0;
+  float: left;
+}
+
+.file-download {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0af;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s;
+}
+
+.file-download:hover {
+  border-bottom: 1px solid #0af;
+}
+
+
+.group-title {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #444;
+}
+
+.tag {
+  display: inline-block;
+  background: #3a3a3a;
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  margin-right: 0.3rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.tag:hover {
+  background: #575757;
+}
+.tag.active {
+  background: #ff0000;
+}
+
+.category-badge {
+  display: inline-block;
+  color: white;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.75rem;
+  border-radius: 20px;
+  margin-top: 0.3rem;
+}
+
+.shortcut[draggable="true"] {
+  cursor: grab;
+}
+.shortcut[draggable="true"]:active {
+  cursor: grabbing;
+}
+
+#shortcutList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+
+.shortcut {
+background: #5e5e5e69;
+border-radius: 1rem;
+  padding: 14px;
+box-shadow: none;
+border: 1px solid #222;
+  display: flex;
+  color: #ffffff;
+  flex-direction: column;
+  gap: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.shortcut:hover {
+transform: scale(1.01);
+transition: transform 0.15s ease-in-out;
+}
+
+.shortcut img.thumbnail {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.shortcut .title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 2px;
+}
+
+.shortcut .description {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+select, .dropdown {
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  padding: 6px 10px;
+  background: #5e5e5e69;
+  border: 1px solid #000000;
+}
+
+select:hover, .dropdown:hover {
+  background: #5e5e5e69;
+}
+
+.shortcut .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+
+
+.tag {
+  background-color: #5e5e5e69;
+  color: var(--text);
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tag.active {
+  background-color: var(--tag-active-bg);
+  color: var(--tag-active-text);
+}
+
+.category-badge {
+  background: #555;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  align-self: flex-start;
+}
+
+.created-date {
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 4px;
+}
+
+.category-group {
+  margin-bottom: 24px;
+}
+
+.category-header {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: #5e5e5e69;
+  border-radius: 8px;
+  user-select: none;
+}
+
+.category-header .chevron {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+
+.category-header:active .chevron {
+  transform: rotate(180deg);
+}
+
+.category-content.hidden {
+  display: none;
+}
+
+.edit-btn {
+  margin-top: 10px;
+  background: #e0e0e0;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.edit-btn:hover {
+  background: #ccc;
+}
+
+.shortcut-card {
+  background: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.shortcut-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 150, 255, 0.5);
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.thumbnail-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.8);
+}
+
+
+.favorite-btn {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  color: #f5b301;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.shortcut-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shortcut-actions {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.shortcut-menu {
+  position: absolute;
+  right: 0;
+  top: 25px;
+  background: #5e5e5e69;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: none;
+  z-index: 100;
+  padding: 6px 0;
+}
+
+.shortcut-menu button {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  text-align: left;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.shortcut-menu button:hover {
+  background-color: #f0f0f0;
+}
+
+

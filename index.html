@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Peal Shortcut Panel</title>
+  <link rel="stylesheet" href="style.css" />
+   <link rel="icon" type="image/x-icon" href="./src/favicon.png">
+</head>
+
+<body>
+
+  <h1 class="title">Peal Shortcut Panel 🚀</h1>
+
+  <input type="text" id="search" placeholder="Başlık, kategori veya etiketten ara..." />
+
+<br>
+</br>
+
+  <div class="filters">
+    <select id="categoryFilter">
+      <option value="">Tüm Kategoriler</option>
+    </select>
+  </div>
+
+  
+  <form id="shortcutForm">
+    <input type="text" id="title" placeholder="Başlık" />
+    <input type="url" id="url" placeholder="https://ornek.com" />
+    <input type="text" id="category" placeholder="Kategori (örneğin: İş, Kişisel)" />
+    <input type="text" id="tags" placeholder="Etiketler (virgülle ayırın: kod,proje)" />
+    <textarea id="desc" placeholder="Açıklama" rows="2"></textarea>
+    <input type="url" id="thumb" placeholder="Thumbnail URL (isteğe bağlı)" />
+    <button type="submit">Ekle</button>
+    <div class="shortcuts-container" id="shortcutsContainer"></div>
+  </form>
+
+  <div id="shortcutList"></div>
+
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
