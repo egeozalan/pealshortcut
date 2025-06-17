@@ -1,4 +1,4 @@
-# <a href="https://egeozalan.com" target="_blank">My Portfolio</a>
+# <a href="egeozalan.com" target="_blank">My Portfolio</a>
 <p align="justify">This website displays my Projects, Web presence, Story, Work experience, and contact information.</p>
 
 [![Repository Status](https://img.shields.io/badge/Repository%20Status-Maintained-dark%20green.svg)]()
